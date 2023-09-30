@@ -6,6 +6,7 @@ html,
 body,
 :root {
     height: 100%;
+    pointer-events: auto !important;
 }
 
 @layer base {
