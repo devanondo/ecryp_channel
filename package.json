@@ -9,7 +9,8 @@
         "lint": "next lint",
         "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|jsx|ts|tsx|json)\"",
         "lint-prettier": "npm run lint && npm run prettier",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "postinstall": "prisma generate"
     },
     "lint-staged": {
         "**/*.{json,js,ts,jsx,tsx,html}": "npm run lint-prettier"
